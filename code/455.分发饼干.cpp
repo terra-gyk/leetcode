@@ -3,10 +3,10 @@
  *
  * [455] 分发饼干
  */
-// #include <vector>
-// #include <algorithm>
+#include <vector>
+#include <algorithm>
 
-// using std::vector;
+using std::vector;
 
 // @lc code=start
 class Solution {
