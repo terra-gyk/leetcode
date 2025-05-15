@@ -4,8 +4,6 @@
  * [76] 最小覆盖子串
  */
 #include <string>
-#include <vector>
-using std::vector;
 using std::string;
 
 /**
