@@ -1,6 +1,6 @@
 /*
  * @lc app=leetcode.cn id=524 lang=cpp
- * 
+ *
  * [524] 通过删除字母匹配到字典里最长单词
  */
 
@@ -10,43 +10,43 @@
 using std::vector;
 using std::string;
 
+
+// @lc code=start
 class Solution {
-public:
-    bool isSubsequence(string& s, string& w) 
+private:
+    bool is_str_has_word(string& str,string& word)
     {
-        int s_size = s.size();
-        int w_size = w.size();
-        if( w_size > s_size )
+        if( word.size() > str.size() )
         {
             return false;
         }
 
-        int index = 0;
-        for(char& ch : w)
+        int s_index = 0;
+        for( char& ch : word)
         {
-            while( index < s_size && ch != s[index] )
+            while( s_index < str.size() && ch != str[s_index] )
             {
-                index++;
+                s_index++;
             }
-            if( index >= s_size )
+
+            if( s_index >= str.size())
             {
                 return false;
             }
-            index++;
+            s_index++;
         }
-        return "";
+        return true;
     }
-
+public:
     string findLongestWord(string s, vector<string>& dictionary) 
     {
-        // 更长的、字典序更小的排在前面，这样一旦找到，就是结果
-        std::sort(dictionary.begin(),dictionary.end(),[](string& left,string& right){
-           return left.size() == right.size() ? left < right : left.size() > right.size(); 
+        std::sort(dictionary.begin(),dictionary.end(),[](string& l,string& r){
+            return l.size() == r.size() ? l < r : l.size() > r.size();
         });
-        
+
         for(string& word : dictionary)
         {
-            if( isSubsequence(s, word) )
+            if( is_str_has_word(s,word))
             {
                 return word;
             }
@@ -54,6 +54,5 @@ public:
         return "";
     }
 };
-
 // @lc code=end
 
