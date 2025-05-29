@@ -33,11 +33,11 @@ struct ListNode
  * 现在慢指针已经在圈里，走了 b ，那么只需要再走a，就一定到了入口。
  */
 
-class Solution {
+class Solution 
+{
 public:
     ListNode *detectCycle(ListNode *head) 
     {
-
         ListNode* slow = head;
         ListNode* fast = head;
 

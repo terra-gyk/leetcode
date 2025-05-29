@@ -8,7 +8,8 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     vector<int> twoSum(vector<int>& numbers, int target) 
     {

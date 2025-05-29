@@ -10,7 +10,8 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) 
     {

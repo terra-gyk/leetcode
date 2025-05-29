@@ -9,7 +9,8 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     bool checkPossibility(vector<int>& nums) 
     {

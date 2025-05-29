@@ -9,9 +9,11 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
-    int candy(vector<int>& ratings) {
+    int candy(vector<int>& ratings) 
+    {
         size_t size = ratings.size();
         vector<int> candy(size,1);
         for(size_t index = 1; index < size; index++)

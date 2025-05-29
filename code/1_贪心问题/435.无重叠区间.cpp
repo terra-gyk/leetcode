@@ -10,9 +10,11 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
-    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+    int eraseOverlapIntervals(vector<vector<int>>& intervals) 
+    {
         std::sort(intervals.begin(),intervals.end(),[](vector<int>& left, vector<int>& right){return left[1] < right[1]; });
         int pre_end = intervals[0][1]; 
         int size = 0;

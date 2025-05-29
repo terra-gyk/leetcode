@@ -10,7 +10,8 @@ using std::vector;
 using std::string;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     vector<int> partitionLabels(string s) 
     {

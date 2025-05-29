@@ -9,9 +9,11 @@
 using std::vector;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
-    int findContentChildren(vector<int>& g, vector<int>& s) {
+    int findContentChildren(vector<int>& g, vector<int>& s) 
+    {
         std::sort(g.begin(),g.end());
         std::sort(s.begin(),s.end());
         size_t g_index = 0;

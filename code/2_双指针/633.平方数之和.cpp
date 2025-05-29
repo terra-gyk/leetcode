@@ -6,7 +6,8 @@
 #include <cmath>
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     bool judgeSquareSum(int c) 
     {

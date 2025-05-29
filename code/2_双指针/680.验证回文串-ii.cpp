@@ -7,7 +7,8 @@
 using std::string;
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 private:
     bool is_Palindrome(string& s,int left ,int right)
     {

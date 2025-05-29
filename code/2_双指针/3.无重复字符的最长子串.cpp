@@ -9,7 +9,8 @@ using std::string;
 using std::unordered_set;
 // @lc code=start
 
-class Solution {
+class Solution 
+{
 public:
     int lengthOfLongestSubstring(string s) 
     {

@@ -16,7 +16,8 @@ using std::string;
 
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 public:
     string minWindow(string s, string t) 
     {

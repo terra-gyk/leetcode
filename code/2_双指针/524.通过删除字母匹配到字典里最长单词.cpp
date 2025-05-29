@@ -12,7 +12,8 @@ using std::string;
 
 
 // @lc code=start
-class Solution {
+class Solution 
+{
 private:
     bool is_str_has_word(string& str,string& word)
     {
